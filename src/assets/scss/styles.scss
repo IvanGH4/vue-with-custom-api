@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import "./parts/mixins";
+
+$dark-blue: #12232e;
+$lighter-blue: #007cc7;
+$lightest-blue: #4da8da;
+$shadow-of-dark-blue: #203647;
+$shadow-of-light-blue: #eefbfb;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: $shadow-of-dark-blue;
+  a {
+    text-decoration: none;
+    color: $shadow-of-light-blue;
+    font-size: 1.2rem;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-left: 1rem;
+
+      a {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+.container {
+  padding: 0 2rem;
+
+  .posts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .post {
+      width: 45%;
+      border: solid 1px $shadow-of-dark-blue;
+      padding: 2rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.login {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right top, $dark-blue, $shadow-of-dark-blue);
+
+  h2 {
+    color: $shadow-of-light-blue;
+  }
+
+  form {
+    width: 40%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    padding: 2rem;
+    border-radius: 20px;
+
+    label {
+      color: $shadow-of-light-blue;
+    }
+
+    input {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(40px);
+      border: solid 2px transparent;
+      background-clip: padding-box;
+      box-shadow: 10px 10px 10px rgba(74, 87, 109, 0.1);
+      margin: 1rem 0;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      border: none;
+      width: 100%;
+      text-align: center;
+      background-color: $lighter-blue;
+      color: $shadow-of-light-blue;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.register {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right top, $lighter-blue, $lightest-blue);
+
+  h2 {
+    color: $shadow-of-light-blue;
+  }
+
+  form {
+    width: 40%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    padding: 2rem;
+    border-radius: 20px;
+
+    label {
+      color: $shadow-of-light-blue;
+    }
+
+    input {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(40px);
+      border: solid 2px transparent;
+      background-clip: padding-box;
+      box-shadow: 10px 10px 10px rgba(74, 87, 109, 0.1);
+      margin: 1rem 0;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      border: none;
+      width: 100%;
+      text-align: center;
+      background-color: $lighter-blue;
+      color: $shadow-of-light-blue;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 90vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  form {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    padding: 2rem;
+    border-radius: 20px;
+
+    input,
+    textarea {
+      width: 100%;
+      border: none;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(40px);
+      border: solid 2px transparent;
+      background-clip: padding-box;
+      box-shadow: 10px 10px 10px rgba(74, 87, 109, 0.1);
+      margin: 1rem 0;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      border: none;
+      width: 100%;
+      text-align: center;
+      background-color: $lighter-blue;
+      color: $shadow-of-light-blue;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .login {
+    padding: 0 2rem;
+    form {
+      width: 100%;
+    }
+  }
+}
