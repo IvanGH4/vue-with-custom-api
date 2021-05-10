@@ -14,6 +14,10 @@ $shadow-of-light-blue: #eefbfb;
   font-family: "Poppins", sans-serif;
 }
 
+.red {
+  color: red;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -36,6 +40,15 @@ $shadow-of-light-blue: #eefbfb;
       a {
         font-size: 0.9rem;
       }
+
+      .logout-btn {
+        background: none;
+        border: solid 1px $shadow-of-light-blue;
+        border-radius: 5px;
+        padding: 0.3rem 0.7rem;
+        color: $shadow-of-light-blue;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -54,6 +67,21 @@ $shadow-of-light-blue: #eefbfb;
       border: solid 1px $shadow-of-dark-blue;
       padding: 2rem;
       margin-top: 1rem;
+    }
+
+    .like-post-box {
+      button {
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        color: $shadow-of-dark-blue;
+
+        &:hover i {
+          text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+        }
+      }
     }
   }
 }

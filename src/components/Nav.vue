@@ -15,7 +15,7 @@
         <router-link to="/profile">Profile</router-link>
       </li>
       <li v-if="currentUser">
-        <button @click="logout">Log out</button>
+        <button @click="logout" class="logout-btn">Log out</button>
       </li>
     </ul>
   </nav>
